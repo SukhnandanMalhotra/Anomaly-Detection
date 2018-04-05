@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    )
+}
 
 # Application definition
 
@@ -40,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_docs',
     'csv_file',
+
 ]
 
 MIDDLEWARE_CLASSES = [
