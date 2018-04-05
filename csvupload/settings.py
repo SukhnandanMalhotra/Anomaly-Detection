@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_docs',
     'csv_file',
-
 ]
 
 MIDDLEWARE_CLASSES = [
